@@ -35,6 +35,7 @@ cargo run
 
 ## TODO
 
+- [ ] Prevent body scroll when modal is open.
 - [ ] Improve loading indicator.
 - [ ] Improve keyboard navigation.
 - [ ] Improve animations.
