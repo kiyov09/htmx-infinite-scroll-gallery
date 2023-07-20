@@ -24,3 +24,18 @@ cargo run
 ```
 
 3. Open the browser and go to `http://localhost:3000`
+
+## Tech stack
+
+- [HTMX](https://htmx.org/)
+- [Rust](https://www.rust-lang.org/)
+  - [Leptos](https://leptos.dev)
+  - [Axum](https://github.com/tokio-rs/axum)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## TODO
+
+- [ ] Improve loading indicator.
+- [ ] Improve keyboard navigation.
+- [ ] Improve animations.
+- [ ] Have it live somewhere.
