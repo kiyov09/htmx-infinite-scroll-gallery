@@ -15,9 +15,9 @@ async fn main() {
         .route("/", get(root))
         .route("/more", get(more))
         .route("/modal/open", get(modal))
-        .nest_service("/static", ServeDir::new("src/static"));
+        .nest_service("/static", ServeDir::new("static"));
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([0, 0, 0, 0], 8080));
 
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
