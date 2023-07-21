@@ -266,15 +266,6 @@ fn modal(cx: Scope, url: String, dir: Option<Direction>) -> impl IntoView {
                 />
             </div>
 
-            // Close
-            <button
-                class="fixed top-6 right-6 rounded-full bg-white shadow-xl w-8 h-8 flex items-center justify-center font-light text-xl text-neutral-700 cursor-pointer"
-                hx-on="click: this.parentElement.outerHTML = ''"
-            >
-                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
         </div>
     }
 }
