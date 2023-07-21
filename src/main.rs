@@ -302,5 +302,5 @@ static mut IMAGE: u32 = 0;
 
 fn random_image_url() -> String {
     unsafe { IMAGE += 1 };
-    format!("https://picsum.photos/800/800?{}", unsafe { IMAGE })
+    format!("https://picsum.photos/800/800.webp?{}", unsafe { IMAGE })
 }
