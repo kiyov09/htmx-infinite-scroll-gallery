@@ -130,8 +130,6 @@ pub fn app(cx: Scope) -> impl IntoView {
             // <Stylesheet href="/static/output.css"/>
             <link rel="stylesheet"  href="/static/output.css"/>
 
-            // HTMX
-            <script src="https://unpkg.com/htmx.org@1.9.3"></script>
         </head>
 
         // content for this welcome page
@@ -142,6 +140,9 @@ pub fn app(cx: Scope) -> impl IntoView {
                     <ImageList />
                 </ul>
             </main>
+
+            // HTMX
+            <script src="https://unpkg.com/htmx.org@1.9.3/dist/htmx.min.js"></script>
         </body>
     }
 }
