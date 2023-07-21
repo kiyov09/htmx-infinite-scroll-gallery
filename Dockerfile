@@ -32,6 +32,6 @@ WORKDIR /app
 
 # Get compiled binaries from builder's cargo install directory
 COPY --from=builder /usr/local/cargo/bin/htmx-gallery /app/htmx-gallery
-COPY --from=builder /usr/src/app/src/static /app/static
+COPY --from=builder /usr/src/app/static /app/static
 
 # No CMD or ENTRYPOINT, see fly.toml with `cmd` override.
