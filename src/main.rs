@@ -192,7 +192,7 @@ fn image_item(cx: Scope) -> impl IntoView {
     view! {
         cx,
         <li
-            tabindex=1
+            tabindex="0"
             class="w-auto h-auto overflow-hidden flex rounded-xl shadow-md bg-gray-100 group hover:ring-2 hover:ring-neutral-400 hover:ring-offset-2 focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2 cursor-pointer outline-none"
             hx-trigger="click, keyup[key=='Enter']"
             hx-get=format!("/modal/open?url={url}")
@@ -257,8 +257,7 @@ fn modal(cx: Scope, url: String, dir: Option<Direction>) -> impl IntoView {
                 // id="modal-content"
                 id=modal_id
                 class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 lg:w-1/2 max-w-3xl aspect-square rounded-md shadow-md overflow-hidden outline-none"
-                tabindex="1"
-                autofocus
+                tabindex="-1"
             >
                 <img
                     class="w-full h-full object-cover aspect-square"
