@@ -39,4 +39,4 @@ cargo run
 - [ ] Improve loading indicator.
 - [ ] Improve keyboard navigation.
 - [ ] Improve animations.
-- [ ] Have it live somewhere.
+- [X] Have it live somewhere.
