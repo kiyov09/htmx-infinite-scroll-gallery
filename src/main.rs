@@ -233,7 +233,7 @@ fn modal(cx: Scope, url: String, dir: Option<Direction>) -> impl IntoView {
             // Left
             <button
                 class="fixed text-2xl top-1/2 -translate-y-1/2 left-10 cursor-pointer text-white p-2 aspect-square rounded-full ring-1 ring-gray-50 active:bg-gray-500"
-                hx-trigget="click"
+                hx-trigger="click"
                 hx-get=format!("/modal/open?dir=left&url={base}?{}", id - 1)
             >
                 <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -244,7 +244,7 @@ fn modal(cx: Scope, url: String, dir: Option<Direction>) -> impl IntoView {
             // Right
             <button
                 class="fixed text-2xl top-1/2 -translate-y-1/2 right-10 cursor-pointer text-white p-2 aspect-square rounded-full ring-1 ring-gray-50 active:bg-gray-500"
-                hx-trigget="click"
+                hx-trigger="click"
                 hx-get=format!("/modal/open?dir=right&url={base}?{}", id + 1)
             >
                 <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
